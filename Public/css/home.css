@@ -1,0 +1,118 @@
+.hero-section {
+  padding-top: 220px;
+  padding-bottom: 120px;
+}
+.hero-section > div {
+  width: 50%;
+}
+.hero-section > div > h1 {
+  margin-bottom: 32px;
+}
+
+.logo-section {
+  background-color: var(--color-secondary-container);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.about-section {
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+
+.about-section > div:first-child {
+  padding: 0 100px;
+}
+
+.about-section p {
+  margin-bottom: 100px;
+}
+
+.about-section img {
+  margin-bottom: 100px;
+}
+
+.product-section {
+  background-color: var(--color-tertiary);
+  padding: 100px;
+  margin-bottom: 60px;
+  border-radius: 40px;
+}
+
+.two-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+}
+.two-card > div {
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.patented-section ul {
+  padding: 40px;
+}
+
+.brand-section {
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+
+.brand-card {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.brand-card > div {
+  padding: 80px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.brand-card p {
+  font-size: 32px;
+  font-family: "Noto Serif TC";
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.brand-card a {
+  padding: 8px 16px;
+  background-color: var(--color-primary);
+  width: fit-content;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.more-btn:link,
+.more-btn:visited {
+  font-size: 16px;
+  color: #fff;
+  font-family: "Noto Sans TC";
+  font-weight: 500;
+  letter-spacing: 0.32px;
+  text-decoration: none;
+}
+
+.form-section {
+  padding: 200px 320px;
+  border-radius: 60px 60px 0 0;
+  background-color: var(--color-secondary);
+  display: grid;
+  color: #fff;
+  gap: 80px;
+  grid-template-columns: 64fr 56fr;
+}
+
+.form-section p {
+  font-size: 32px;
+  font-family: "Noto Serif TC";
+  font-weight: 700;
+}
+
+form p label {
+  font-size: 15px;
+}

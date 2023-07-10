@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --color-primary: #376a20;
+  --color-secondary: #55624c;
+  --color-tertiary: #386667;
+  --color-primary-container: #b7f397;
+  --color-secondary-container: #d8e7cb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", "Noto Sans TC";
+  font-weight: 400;
+  color: #1a1c18;
+  line-height: 28.96px;
+  background-color: #fafaf3;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: "Noto Serif TC";
+  font-weight: 900;
+  line-height: 100%;
+}
+
+h2 {
+  font-size: 32px;
+  font-family: "Noto Serif TC";
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.primary {
+  color: var(--color-primary);
+}
+
+.white {
+  color: #fff;
+}
+
+p {
+  font-size: 20px;
+  letter-spacing: 0.4px;
+}
+
+img {
+  width: 100%;
+}
+
+.inner-section {
+  padding-left: calc(36vw - 365.7px);
+  padding-right: calc(36vw - 365.7px);
+}
+
+/* NAVIGATION */
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  padding: 0 80px;
+  z-index: 100;
+  background-color: #fafaf3;
+}
+
+.logo {
+  padding: auto 0;
+  width: 180px;
+}
+
+.nav-lan {
+  display: flex;
+  column-gap: 143px;
+}
+
+.nav_container.sticky {
+  position: fixed;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  column-gap: 58px;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  font-size: 16px;
+  color: #1a1c18;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s;
+}
+
+/* drop */
+.nav-drop-container {
+  position: absolute;
+  align-items: center;
+  padding-top: 40px;
+  margin-left: -5px;
+}
+
+.nav-drop-active {
+  padding: 20px;
+  background-color: #fafaf3;
+  border-radius: 20px;
+}
+
+.drop-a {
+  font-size: 16px;
+  color: #1a1c18;
+  text-decoration: none;
+}
+.drop-li {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+.drop-li:hover {
+  background-color: var(--color-primary-container);
+}
+
+.nav-drop-div {
+  list-style: none;
+  text-align: center;
+}
+
+.seperate-line {
+  margin: 8px 0px;
+  border: solid 1px #c3c8bb;
+}
+
+/* language selector */
+.lan-selector {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  font-size: 16px;
+}
+
+.lan-selector > img {
+  margin-right: 4px;
+}
+
+.language {
+  cursor: pointer;
+}
