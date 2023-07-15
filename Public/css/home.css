@@ -1,12 +1,32 @@
+.fake-img {
+  height: 620px;
+  width: 620px;
+  background-color: bisque;
+}
+
 .hero-section {
   padding-top: 220px;
   padding-bottom: 120px;
+  display: flex;
+  gap: 20px;
 }
 .hero-section > div {
   width: 50%;
+  position: relative;
+  margin: auto;
 }
 .hero-section > div > h1 {
   margin-bottom: 32px;
+}
+.hero-section > div > svg {
+  position: absolute;
+}
+.hero-section > div > .s-svg {
+  top: -86px;
+}
+.hero-section > div > .l-svg {
+  top: 456px;
+  left: -50px;
 }
 
 .logo-section {
@@ -51,6 +71,7 @@
 
 .patented-section ul {
   padding: 40px;
+  list-style-position: inside;
 }
 
 .brand-section {
@@ -79,16 +100,11 @@
   color: var(--color-secondary);
 }
 
-.brand-card a {
+.more-btn {
   padding: 8px 16px;
   background-color: var(--color-primary);
   width: fit-content;
-  color: #fff;
   border-radius: 4px;
-}
-
-.more-btn:link,
-.more-btn:visited {
   font-size: 16px;
   color: #fff;
   font-family: "Noto Sans TC";
@@ -115,4 +131,64 @@
 
 form p label {
   font-size: 15px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .fake-img {
+    height: 229px;
+  }
+  .hero-section {
+    flex-direction: column;
+    padding-bottom: 100px;
+  }
+  .hero-section > div {
+    width: 100%;
+  }
+  .hero-section > div > .s-svg {
+    top: -50px;
+    width: 30px;
+  }
+  .hero-section > div > .l-svg {
+    bottom: -20px;
+    right: 0px;
+    top: auto;
+    left: auto;
+    width: 60px;
+  }
+  .about-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .about-section > div:first-child {
+    padding: 0;
+  }
+  .about-section p {
+    margin-bottom: 20px;
+  }
+  .product-section {
+    padding: 40px;
+    margin-bottom: 20px;
+  }
+  .product-section h2 {
+    margin-bottom: 40px;
+  }
+  .two-card {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+  .brand-section {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+  .more-btn {
+    margin: 0 auto 40px auto;
+  }
+  .brand-card > div {
+    justify-content: center;
+  }
+  .form-section {
+    padding: 20px;
+    display: block;
+    text-align: center;
+  }
 }

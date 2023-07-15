@@ -13,62 +13,12 @@
   <link rel="stylesheet" href="/Public/css/global.css" />
   <link rel="stylesheet" href="/Public/css/home.css" />
 </head>
-
-<?php
-
-$errors = [];
-$errorMessage = 'Please fill the required form';
-
-if (!empty($_POST)) {
-   $name = $_POST['name'];
-   $email = $_POST['email'];
-   $country = $_POST['country'];
-   $message = $_POST['message'];
-  
-   if (empty($name)) {
-       $errors[] = 'Name is empty';
-   }
-
-   if (empty($email)) {
-       $errors[] = 'Email is empty';
-   } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-       $errors[] = 'Email is invalid';
-   }
-
-   if (empty($country)) {
-       $errors[] = 'Country is empty';
-   }
-   
-   if (empty($errors)) {
-    $toEmail = 'leonwuya@gmail.com';
-    $emailSubject = 'New email from your contact form';
-    $headers = ['From' => $email, 'Reply-To' => $email, 'Content-type' => 'text/html; charset=utf-8'];
-    $bodyParagraphs = ["Name: {$name}", "Email: {$email}", "Country: {$country}",  "Message:", $message];
-    $body = join(PHP_EOL, $bodyParagraphs);
-
-    if (mail($toEmail, $emailSubject, $body, $headers)) {
-
-        header('Location: thank-you.html');
-    } else {
-        $errorMessage = 'Oops, something went wrong. Please try again later';
-    }
-
-} else {
-
-    $allErrors = join('<br/>', $errors);
-    $errorMessage = "<p style='color: red;'>{$allErrors}</p>";
-}
-}
-
-
-?>
-
 <html lang="en">
   <body>
     <header class="header">
       <nav class="nav_container sticky">
         <img src="/src/header/logo.png" alt="" class="logo" />
-        <div class="nav-lan">
+        <div class="nav-lan desktop">
           <ul class="nav__links">
             <li class="nav__item" data-nav="1">
               <a class="nav__link" href="#">服務項目</a>
@@ -107,10 +57,37 @@ if (!empty($_POST)) {
             <li class="language" data-lan="zh">ZH</li>
           </ul>
         </div>
+        <div class="mobile" id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="#"><li>服務項目</li></a>
+            <a href="#"><li>專利產品</li></a>
+            <a href="#"><li>品牌代理與銷售</li></a>
+            <a href="#"><li>我們的客戶</li></a>
+            <a href="#"><li>連絡我們</li></a>
+          </ul>
+        </div>
       </nav>
     </header>
     <div class="hero-section inner-section">
       <div>
+        <svg
+          width="60"
+          height="60"
+          viewBox="0 0 60 60"
+          class="s-svg"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M30 0L33.4728 8.07332L39.2705 1.4683L40.0786 10.2197L47.6336 5.72949L45.6978 14.3022L54.2705 12.3664L49.7803 19.9214L58.5317 20.7295L51.9267 26.5272L60 30L51.9267 33.4728L58.5317 39.2705L49.7803 40.0786L54.2705 47.6336L45.6978 45.6978L47.6336 54.2705L40.0786 49.7803L39.2705 58.5317L33.4728 51.9267L30 60L26.5272 51.9267L20.7295 58.5317L19.9214 49.7803L12.3664 54.2705L14.3022 45.6978L5.72949 47.6336L10.2197 40.0786L1.4683 39.2705L8.07332 33.4728L0 30L8.07332 26.5272L1.4683 20.7295L10.2197 19.9214L5.72949 12.3664L14.3022 14.3022L12.3664 5.72949L19.9214 10.2197L20.7295 1.4683L26.5272 8.07332L30 0Z"
+            fill="#55624C"
+          />
+        </svg>
+
         <h1>
           攜手共創整合創新 <br /><span class="primary">引領弱電系統整合</span>
         </h1>
@@ -118,7 +95,21 @@ if (!empty($_POST)) {
           整合通訊、資訊、網路、安全辦公室自動化，滿足高端應用的需求，不斷進行獨特的創新和突破，以適應時代的升級與變遷。
         </p>
       </div>
-      <div></div>
+      <div class="fake-img">
+        <svg
+          width="80"
+          height="80"
+          viewBox="0 0 80 80"
+          fill="none"
+          class="l-svg"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M40 0L44.6305 10.7644L52.3607 1.95774L53.4381 13.6262L63.5114 7.63932L60.9304 19.0696L72.3607 16.4886L66.3738 26.5619L78.0423 27.6393L69.2356 35.3695L80 40L69.2356 44.6305L78.0423 52.3607L66.3738 53.4381L72.3607 63.5114L60.9304 60.9304L63.5114 72.3607L53.4381 66.3738L52.3607 78.0423L44.6305 69.2356L40 80L35.3695 69.2356L27.6393 78.0423L26.5619 66.3738L16.4886 72.3607L19.0696 60.9304L7.63932 63.5114L13.6262 53.4381L1.95774 52.3607L10.7644 44.6305L0 40L10.7644 35.3695L1.95774 27.6393L13.6262 26.5619L7.63932 16.4886L19.0696 19.0696L16.4886 7.63932L26.5619 13.6262L27.6393 1.95774L35.3695 10.7644L40 0Z"
+            fill="#386667"
+          />
+        </svg>
+      </div>
     </div>
     <div class="logo-section"></div>
     <div class="about-section inner-section">
@@ -175,49 +166,50 @@ if (!empty($_POST)) {
           <img src="/src/home/Frame 30.png" alt="" />
           <div>
             <p>Ｒ＆Ｍ</p>
-            <a href="" class="more-btn">更多品牌銷售</a>
+            <a href="" class="more-btn desktop">更多品牌銷售</a>
           </div>
         </div>
+        <a href="" class="more-btn mobile">更多品牌銷售</a>
         <div class="brand-card">
           <img src="/src/home/Frame 30.png" alt="" />
           <div>
             <p>TREND Networks</p>
-            <a href="" class="more-btn">更多品牌銷售</a>
+            <a href="" class="more-btn desktop">更多品牌銷售</a>
           </div>
         </div>
+        <a href="" class="more-btn mobile">更多品牌銷售</a>
       </div>
     </div>
     <div class="form-section">
-      <img src="/src/home/Frame 35.png" alt="" />
+      <img src="/src/home/Frame 35.png" alt="" class="desktop" />
       <div>
         <p>聯絡我們</p>
-        <form  method="POST"  id="contact-form">
+        <form method="POST" id="contact-form">
           <p>
             <label for="name">Name:</label>
-            <input type="text" name="name" required />
+            <input type="text" id="name" required />
           </p>
           <p>
             <label for="email">Email:</label>
-            <input type="email" name="email" required />
+            <input type="email" id="email" required />
           </p>
           <p>
             <label for="country">Country:</label>
-            <input
-              type="country"
-              name="country"
-            required
-          />
+            <input type="country" id="country" required />
           </p>
           <p>
             <label for="message">Message:</label>
-            <textarea id="message" name="message" ></textarea>
+            <textarea id="message" id="message"></textarea>
           </p>
-          <input type="submit" value="Send" />
+          <button id="contact-btn">Submit</button>
         </form>
       </div>
     </div>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
-    <script src="/Public/js/index.js"></script>
-    <script src="/Public/js/send.js"></script>
+    <footer>
+      <p class="white">Copyright © 2023 youhung. All rights reserved.</p>
+    </footer>
   </body>
+  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+  <script src="/Public/js/index.js"></script>
+  <!-- <script src="/Public/js/send.js"></script> -->
 </html>

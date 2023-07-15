@@ -1,7 +1,5 @@
 "use strict";
 
-import "whatwg-fetch";
-
 const navContainer = document.querySelector(".nav_container");
 const navItems = document.querySelectorAll(".nav__item");
 const navLinkContainer = document.querySelectorAll(".nav__link");
@@ -100,18 +98,3 @@ navItems.forEach((nav) =>
     });
   })
 );
-
-fetch("https://formsubmit.co/ajax/leonwuya@gmail.com", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-    Accept: "application/json",
-  },
-  body: JSON.stringify({
-    name: "FormSubmit",
-    message: "I'm from Devro LABS",
-  }),
-})
-  .then((response) => response.json())
-  .then((data) => console.log(data))
-  .catch((error) => console.log(error));

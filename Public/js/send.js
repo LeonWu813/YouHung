@@ -1,39 +1,20 @@
-const constraints = {
-  name: {
-    presence: { allowEmpty: false },
-  },
-  email: {
-    presence: { allowEmpty: false },
-    email: true,
-  },
-  country: {
-    presence: { allowEmpty: false },
-  },
-};
+var btn = document.getElementById("contact-btn");
+btn.addEventListener("click", function (e) {
+  e.preventDefault();
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var country = document.getElementById("country").value;
+  var message = document.getElementById("message").value;
+  var body = `Name: ${name} \n Email: ${email} \n Country: ${country} \n Message: ${message} \n `;
 
-const form = document.getElementById("contact-form");
-
-form.addEventListener(
-  "submit",
-  function (event) {
-    const formValues = {
-      name: form.elements.name.value,
-      email: form.elements.email.value,
-      country: form.elements.country.value,
-    };
-
-    const errors = validate(formValues, constraints);
-
-    if (errors) {
-      event.preventDefault();
-      const errorMessage = Object.values(errors)
-        .map(function (fieldValues) {
-          return fieldValues.join(", ");
-        })
-        .join("\n");
-
-      alert(errorMessage);
-    }
-  },
-  false
-);
+  Email.send({
+    Host: "smtp.elasticemail.com",
+    Username: "leonwuya@gmail.com",
+    Password: "pazjllhrfsjrfrxu",
+    // Password: "5B9B381EE1658D2E121A04B5753B0C5CC1B7",
+    To: "leonwuya@gmail.com",
+    From: email,
+    Subject: "New form submit from website!",
+    Body: body,
+  }).then((message) => alert(message));
+});
