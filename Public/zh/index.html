@@ -65,7 +65,27 @@
           <ul id="menu">
             <a href="#"><li>服務項目</li></a>
             <a href="#"><li>專利產品</li></a>
-            <a href="#"><li>品牌代理與銷售</li></a>
+            <a href="#" class="mob-drop" onclick="mobNavDropActive()">
+              <li class="mob-menu-li-icon">
+                <p>品牌代理與銷售</p>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                    fill="#376A20"
+                  />
+                </svg>
+              </li>
+              <div class="mob-drop-item" style="display: none">
+                <li><a href="#">品牌銷售</a></li>
+                <li><a href="#">品牌代理</a></li>
+              </div>
+            </a>
             <a href="#"><li>我們的客戶</li></a>
             <a href="#"><li>連絡我們</li></a>
           </ul>
@@ -209,7 +229,7 @@
       <p class="white">Copyright © 2023 youhung. All rights reserved.</p>
     </footer>
   </body>
-  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
   <script src="/Public/js/index.js"></script>
+  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
   <!-- <script src="/Public/js/send.js"></script> -->
 </html>

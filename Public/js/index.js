@@ -7,6 +7,7 @@ const navDropContainer = document.querySelectorAll(".nav-drop-container");
 const navDropUl = document.querySelectorAll(".nav-drop-div");
 const lanContainer = document.querySelector(".lan-selector");
 const languages = document.querySelectorAll(".language");
+const mobNavDropItem = document.querySelector(".mob-drop-item");
 
 /////// Change Language
 let currentLanguage;
@@ -98,3 +99,14 @@ navItems.forEach((nav) =>
     });
   })
 );
+
+let mobDropBoolean = false;
+function mobNavDropActive() {
+  if (mobDropBoolean) {
+    mobNavDropItem.style.display = "none";
+  } else {
+    mobNavDropItem.style.display = "block";
+  }
+
+  mobDropBoolean = !mobDropBoolean;
+}

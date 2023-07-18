@@ -172,11 +172,8 @@ img {
 
 #menuToggle a {
   text-decoration: none;
-  color: #232323;
+  color: #1a1c18;
   transition: color 0.3s ease;
-}
-
-#menuToggle a:hover {
 }
 
 #menuToggle input {
@@ -197,12 +194,12 @@ img {
 
 #menuToggle span {
   display: block;
-  width: 33px;
-  height: 4px;
+  width: 18px;
+  height: 2px;
   margin-bottom: 5px;
   position: relative;
 
-  background: #cdcdcd;
+  background: #1a1c18;
   border-radius: 3px;
 
   z-index: 1;
@@ -224,25 +221,28 @@ img {
 /* Transform into a crossmark.*/
 #menuToggle input:checked ~ span {
   opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  transform: rotate(45deg) translate(0px, 0px) scale(1.4, 1);
+  background: #1a1c18;
 }
 #menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 #menuToggle input:checked ~ span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(0, -1px);
+  transform: rotate(-45deg) translate(0, -1px) scale(1.4, 1);
 }
 
 #menu {
   position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
+  position: absolute;
+  width: 261px;
+  margin-top: -100px;
+  right: -32px;
+  padding: 38px 32px;
   padding-top: 125px;
+  height: 120vh;
 
-  background: #ededed;
+  background: #fff;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -254,8 +254,10 @@ img {
 }
 
 #menu li {
-  padding: 10px 0;
-  font-size: 22px;
+  padding: 8px 16px;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
 /*
@@ -263,6 +265,11 @@ img {
  */
 #menuToggle input:checked ~ ul {
   transform: none;
+}
+
+.mob-menu-li-icon {
+  display: flex !important;
+  justify-content: space-between;
 }
 
 /* Footer */
@@ -286,6 +293,7 @@ footer {
   h1 {
     font-size: 32px;
     font-weight: 700;
+    line-height: normal;
   }
   h2 {
     font-size: 24px;
