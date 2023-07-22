@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Client</title>
+    <link rel="stylesheet" href="/Public/css/global.css" />
+    <link rel="stylesheet" href="/Public/css/our-client.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav_container sticky" style="background-color: unset">
+        <img src="/src/header/logo.png" alt="" class="logo" />
+        <div class="nav-lan desktop">
+          <ul class="nav__links">
+            <li class="nav__item" data-nav="1">
+              <a class="nav__link" href="#">服務項目</a>
+              <div class="nav-drop-container">
+                <ul class="nav-drop-div"></ul>
+              </div>
+            </li>
+            <li class="nav__item" data-nav="2">
+              <a class="nav__link" href="#">專利產品</a>
+              <div class="nav-drop-container">
+                <ul class="nav-drop-div"></ul>
+              </div>
+            </li>
+            <li class="nav__item" data-nav="3">
+              <a class="nav__link" href="#">品牌代理與銷售</a>
+              <div class="nav-drop-container">
+                <ul class="nav-drop-div"></ul>
+              </div>
+            </li>
+            <li class="nav__item" data-nav="4">
+              <a class="nav__link" href="Public/zh/our-client.html"
+                >我們的客戶</a
+              >
+              <div class="nav-drop-container">
+                <ul class="nav-drop-div"></ul>
+              </div>
+            </li>
+            <a
+              href="mailto:someone@example.com?subject=Contact from our Website"
+              class="contact-us-btn"
+              target="_blank"
+              >聯絡我們</a
+            >
+          </ul>
+          <ul class="lan-selector">
+            <img src="/src/header/language-selector.svg" alt="" />
+            <li class="language primary" data-lan="en">EN</li>
+            <li class="language" data-lan="zh">ZH</li>
+          </ul>
+        </div>
+        <div class="mobile" id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="#"><li>服務項目</li></a>
+            <a href="#"><li>專利產品</li></a>
+            <a href="#" class="mob-drop" onclick="mobNavDropActive()">
+              <li class="mob-menu-li-icon">
+                <p>品牌代理與銷售</p>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                    fill="#376A20"
+                  />
+                </svg>
+              </li>
+              <div class="mob-drop-item" style="display: none">
+                <li><a href="#">品牌銷售</a></li>
+                <li><a href="#">品牌代理</a></li>
+              </div>
+            </a>
+            <a href="#"><li>我們的客戶</li></a>
+            <a
+              href="mailto:someone@example.com?subject=Contact from our Website"
+              target="_blank"
+              ><li>連絡我們</li></a
+            >
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="hero-section"></div>
+    <div class="inner-section text-section">
+      <p class="our-client-h">我們的客戶</p>
+      <p>
+        宇紘深耕領域數十年，擁有超過 500+
+        來自不同產業知名企業的信賴，歡迎馬上連絡我們諮詢。
+      </p>
+    </div>
+    <div class="inner-section">
+      <div class="clients-grid">
+        <div class="test"></div>
+        <div class="test"></div>
+        <div class="test big-logo"></div>
+      </div>
+      <div class="clients-grid">
+        <div class="test big-logo"></div>
+        <div class="test"></div>
+        <div class="test"></div>
+      </div>
+      <div class="clients-grid">
+        <div class="test"></div>
+        <div class="test big-logo"></div>
+        <div class="test"></div>
+      </div>
+    </div>
+  </body>
+</html>

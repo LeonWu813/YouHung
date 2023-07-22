@@ -82,6 +82,7 @@ img {
 .nav-lan {
   display: flex;
   column-gap: 143px;
+  align-items: center;
 }
 
 .nav_container.sticky {
@@ -102,6 +103,10 @@ img {
   text-decoration: none;
   display: block;
   transition: all 0.3s;
+}
+
+.nav__link:hover {
+  color: var(--color-primary) !important;
 }
 
 /* drop */
@@ -140,6 +145,19 @@ img {
 .seperate-line {
   margin: 8px 0px;
   border: solid 1px #c3c8bb;
+}
+
+.contact-us-btn {
+  border-radius: 4px;
+  padding: 8px 16px;
+  background-color: var(--color-primary);
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.contact-us-btn:hover {
+  background-color: rgba(55, 106, 32, 0.6);
 }
 
 /* language selector */

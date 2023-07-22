@@ -40,8 +40,8 @@ addEventListener("click", function (e) {
 });
 
 ///////// Nav
-const dropBoolean = [false, false, false, false, false];
-const exist = [false, false, true, false, false];
+const dropBoolean = [false, false, false, false];
+const exist = [false, false, true, false];
 
 const services = {};
 const products = {};
@@ -51,9 +51,8 @@ const brands = {
   url: ["brand-agency", "brand-sales"],
 };
 const clients = {};
-const contact = {};
 
-const navContents = [services, products, brands, clients, contact];
+const navContents = [services, products, brands, clients];
 
 navContainer.addEventListener("mouseover", function (e) {
   const hovered = e.target.closest(".nav__item");

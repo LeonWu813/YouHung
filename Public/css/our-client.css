@@ -1,0 +1,46 @@
+.hero-section {
+  background: url(/src/our-client/hero-background.png);
+  height: 460px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our-client-h {
+  color: var(--color-secondary);
+  font-family: "Noto Serif TC";
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.text-section {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+.clients-grid {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 40px;
+}
+
+.test {
+  background-color: aquamarine;
+  border-radius: 20px;
+  height: 200px;
+  width: auto;
+}
+
+.big-logo {
+  grid-column: span 2;
+}
+
+@media only screen and (max-width: 1024px) {
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .big-logo {
+    order: 4;
+  }
+}

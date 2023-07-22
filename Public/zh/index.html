@@ -3,7 +3,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>F2E WEEK01</title>
+  <title>YouHung</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -39,17 +39,19 @@
               </div>
             </li>
             <li class="nav__item" data-nav="4">
-              <a class="nav__link" href="#">我們的客戶</a>
+              <a class="nav__link" href="/Public/zh/our-client.html"
+                >我們的客戶</a
+              >
               <div class="nav-drop-container">
                 <ul class="nav-drop-div"></ul>
               </div>
             </li>
-            <li class="nav__item" data-nav="5">
-              <a class="nav__link" href="#">聯絡我們</a>
-              <div class="nav-drop-container">
-                <ul class="nav-drop-div"></ul>
-              </div>
-            </li>
+            <a
+              href="mailto:someone@example.com?subject=Contact from our Website"
+              class="contact-us-btn"
+              target="_blank"
+              >聯絡我們</a
+            >
           </ul>
           <ul class="lan-selector">
             <img src="/src/header/language-selector.svg" alt="" />
@@ -87,7 +89,11 @@
               </div>
             </a>
             <a href="#"><li>我們的客戶</li></a>
-            <a href="#"><li>連絡我們</li></a>
+            <a
+              href="mailto:someone@example.com?subject=Contact from our Website"
+              target="_blank"
+              ><li>連絡我們</li></a
+            >
           </ul>
         </div>
       </nav>
@@ -200,36 +206,9 @@
         <a href="" class="more-btn mobile">更多品牌銷售</a>
       </div>
     </div>
-    <div class="form-section">
-      <img src="/src/home/Frame 35.png" alt="" class="desktop" />
-      <div>
-        <p>聯絡我們</p>
-        <form method="POST" id="contact-form">
-          <p>
-            <label for="name">Name:</label>
-            <input type="text" id="name" required />
-          </p>
-          <p>
-            <label for="email">Email:</label>
-            <input type="email" id="email" required />
-          </p>
-          <p>
-            <label for="country">Country:</label>
-            <input type="country" id="country" required />
-          </p>
-          <p>
-            <label for="message">Message:</label>
-            <textarea id="message" id="message"></textarea>
-          </p>
-          <button id="contact-btn">Submit</button>
-        </form>
-      </div>
-    </div>
     <footer>
       <p class="white">Copyright © 2023 youhung. All rights reserved.</p>
     </footer>
   </body>
   <script src="/Public/js/index.js"></script>
-  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
-  <!-- <script src="/Public/js/send.js"></script> -->
 </html>
