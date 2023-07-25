@@ -176,6 +176,13 @@ img {
   cursor: pointer;
 }
 
+img.mobile {
+  margin-left: auto;
+  margin-right: 20px;
+  width: auto;
+  cursor: pointer;
+}
+
 /* NAVIGATION MOBILE */
 .mobile {
   display: none;

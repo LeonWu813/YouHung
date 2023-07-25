@@ -25,11 +25,17 @@
   margin-bottom: 40px;
 }
 
-.test {
-  background-color: aquamarine;
+.client-logos {
+  background-color: #fff;
   border-radius: 20px;
   height: 200px;
-  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-logos img {
+  width: unset;
 }
 
 .big-logo {
