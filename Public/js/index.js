@@ -48,7 +48,7 @@ const products = {};
 const brands = {
   enText: ["BRAND AGENCY", "BRAND SALES"],
   zhText: ["品牌代理", "品牌銷售"],
-  url: ["brand-agency", "brand-sales"],
+  url: ["brand-agency-sales.html#agency", "brand-agency-sales.html#sales"],
 };
 const clients = {};
 
@@ -108,4 +108,17 @@ function mobNavDropActive() {
   }
 
   mobDropBoolean = !mobDropBoolean;
+}
+
+// header scroll
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.querySelector(".nav_container").style.backgroundColor = "#fafaf3";
+  } else {
+    document.querySelector(".nav_container").style.backgroundColor = "unset";
+  }
 }

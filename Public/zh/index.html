@@ -17,17 +17,19 @@
   <body>
     <header class="header">
       <nav class="nav_container sticky">
-        <img src="/src/header/logo.png" alt="" class="logo" />
+        <a href="index.html" class="logo">
+          <img src="/src/header/logo.png" alt="" />
+        </a>
         <div class="nav-lan desktop">
           <ul class="nav__links">
             <li class="nav__item" data-nav="1">
-              <a class="nav__link" href="#">服務項目</a>
+              <a class="nav__link" href="service.html">服務項目</a>
               <div class="nav-drop-container">
                 <ul class="nav-drop-div"></ul>
               </div>
             </li>
             <li class="nav__item" data-nav="2">
-              <a class="nav__link" href="#">專利產品</a>
+              <a class="nav__link" href="patented-products.html">專利產品</a>
               <div class="nav-drop-container">
                 <ul class="nav-drop-div"></ul>
               </div>
@@ -39,9 +41,7 @@
               </div>
             </li>
             <li class="nav__item" data-nav="4">
-              <a class="nav__link" href="/Public/zh/our-client.html"
-                >我們的客戶</a
-              >
+              <a class="nav__link" href="our-client.html">我們的客戶</a>
               <div class="nav-drop-container">
                 <ul class="nav-drop-div"></ul>
               </div>
@@ -55,7 +55,7 @@
           </ul>
           <ul class="lan-selector">
             <img src="/src/header/language-selector.svg" alt="" />
-            <li class="language primary" data-lan="en">EN</li>
+            <li class="language" data-lan="en">EN</li>
             <li class="language" data-lan="zh">ZH</li>
           </ul>
         </div>
@@ -66,8 +66,8 @@
           <span></span>
           <span></span>
           <ul id="menu">
-            <a href="#"><li>服務項目</li></a>
-            <a href="#"><li>專利產品</li></a>
+            <a href="service.html"><li>服務項目</li></a>
+            <a href="patented-products.html"><li>專利產品</li></a>
             <a href="#" class="mob-drop" onclick="mobNavDropActive()">
               <li class="mob-menu-li-icon">
                 <p>品牌代理與銷售</p>
@@ -85,11 +85,15 @@
                 </svg>
               </li>
               <div class="mob-drop-item" style="display: none">
-                <li><a href="#">品牌銷售</a></li>
-                <li><a href="#">品牌代理</a></li>
+                <li>
+                  <a href="brand-agency-sales.html#agency">品牌代理</a>
+                </li>
+                <li>
+                  <a href="brand-agency-sales.html#sales">品牌銷售</a>
+                </li>
               </div>
             </a>
-            <a href="#"><li>我們的客戶</li></a>
+            <a href="our-client.html"><li>我們的客戶</li></a>
             <a
               href="mailto:someone@example.com?subject=Contact from our Website"
               target="_blank"
