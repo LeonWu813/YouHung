@@ -1,0 +1,90 @@
+.hero-section {
+  background: url(/src/brand-agency-sales/hero-background.png);
+  height: 460px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h2 {
+  color: var(--color-secondary);
+  margin-bottom: 60px;
+  line-height: normal;
+}
+
+#agency {
+  padding-top: 120px;
+}
+
+#sales {
+  padding-top: 80px;
+}
+
+.agency {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.agency p {
+  font-size: 32px;
+  font-family: "Noto Serif TC";
+  font-weight: 700;
+  color: var(--color-tertiary);
+  margin-bottom: 10px;
+}
+
+.agency ul {
+  font-weight: 700;
+  letter-spacing: 0.32px;
+  color: #1a1c18;
+  margin-bottom: 40px;
+}
+
+.agency-logo {
+  height: 285px;
+  border-radius: 20px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.agency-logo img {
+  width: unset;
+}
+
+.agency-name {
+  padding-left: 60px;
+}
+
+.clients-grid {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 40px;
+}
+
+.client-logos {
+  background-color: #fff;
+  border-radius: 20px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-logos img {
+  width: unset;
+}
+
+.big-logo {
+  grid-column: span 2;
+}
+
+.gray-logo {
+  background: #eceef2;
+}
+
+.white-logo {
+  background: var(--color-tertiary);
+}

@@ -1,0 +1,73 @@
+.hero-section {
+  background: url(/src/patented-products/hero-background.png);
+  height: 460px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.patented-container {
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+
+h2 {
+  color: var(--color-secondary);
+  margin-bottom: 60px;
+}
+
+.patented {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.patented-card {
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.green-card {
+  background-color: var(--color-tertiary);
+  color: #fff;
+}
+
+.white-card {
+  background-color: #fff;
+}
+
+.white-card p {
+  color: var(--color-tertiary);
+}
+
+.patented-card p {
+  font-size: 32px;
+  line-height: normal;
+  font-family: "Noto Serif TC";
+  font-weight: 700;
+}
+
+.patented-card ul {
+  margin-top: 20px;
+}
+
+.contact-card {
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-card p {
+  font-size: 16px;
+  font-family: "Noto Serif TC";
+  font-weight: 400;
+  padding-right: 40px;
+}
+
+.contact-container {
+  padding-bottom: 240px;
+}
+
+.contact-card div {
+  width: 130px;
+}

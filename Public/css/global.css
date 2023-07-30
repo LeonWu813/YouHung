@@ -57,6 +57,10 @@ img {
   width: 100%;
 }
 
+ul {
+  list-style-position: inside;
+}
+
 .inner-section {
   padding-left: calc(36vw - 365.7px);
   padding-right: calc(36vw - 365.7px);

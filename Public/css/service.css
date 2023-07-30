@@ -1,0 +1,68 @@
+.hero-section {
+  background: url(/src/service/hero-background.png);
+  height: 460px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inner-section {
+  padding-top: 120px;
+  padding-bottom: 240px;
+}
+
+h2 {
+  color: var(--color-secondary);
+  margin-bottom: 60px;
+}
+
+.service {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.service-card {
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.green-card {
+  background-color: var(--color-tertiary);
+  color: #fff;
+}
+
+.white-card {
+  background-color: #fff;
+}
+
+.white-card p {
+  color: var(--color-tertiary);
+}
+
+.service-card p {
+  font-size: 32px;
+  font-family: "Noto Serif TC";
+  font-weight: 700;
+}
+
+.service-card ul {
+  margin-top: 20px;
+}
+
+.contact-card {
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-card p {
+  font-size: 16px;
+  font-family: "Noto Serif TC";
+  font-weight: 400;
+  padding-right: 40px;
+}
+
+.contact-card div {
+  width: 130px;
+}
