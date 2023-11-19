@@ -17,44 +17,90 @@
   <body>
     <header class="header">
       <nav class="nav_container sticky">
-        <img src="/src/header/logo.png" alt="" class="logo" />
-        <div class="nav-lan">
+        <a href="index.html" class="logo">
+          <img src="/src/header/logo.png" alt="" />
+        </a>
+        <div class="nav-lan desktop">
           <ul class="nav__links">
             <li class="nav__item" data-nav="1">
-              <a class="nav__link" href="/Public/zh/service.html">SERVICES</a>
+              <a class="nav__link" href="service.html">SERVICES</a>
               <div class="nav-drop-container">
                 <ul class="nav-drop-div"></ul>
               </div>
             </li>
             <li class="nav__item" data-nav="2">
-              <a class="nav__link" href="#">PATENTED PRODUCTS</a>
-              <ul class="nav-drop-container">
-                <div class="nav-drop-div"></div>
-              </ul>
+              <a class="nav__link" href="patented-products.html"
+                >PATENTED PRODUCTS</a
+              >
+              <div class="nav-drop-container">
+                <ul class="nav-drop-div"></ul>
+              </div>
             </li>
             <li class="nav__item" data-nav="3">
               <a class="nav__link" href="#">BRAND AGENCY & SALES</a>
-              <ul class="nav-drop-container">
-                <div class="nav-drop-div"></div>
-              </ul>
+              <div class="nav-drop-container">
+                <ul class="nav-drop-div"></ul>
+              </div>
             </li>
             <li class="nav__item" data-nav="4">
-              <a class="nav__link" href="#">OUR CLIENTS</a>
-              <ul class="nav-drop-container">
-                <div class="nav-drop-div"></div>
-              </ul>
+              <a class="nav__link" href="our-client.html">OUR CLIENTS</a>
+              <div class="nav-drop-container">
+                <ul class="nav-drop-div"></ul>
+              </div>
             </li>
-            <li class="nav__item" data-nav="5">
-              <a class="nav__link" href="#">CONTACT US</a>
-              <ul class="nav-drop-container">
-                <div class="nav-drop-div"></div>
-              </ul>
-            </li>
+            <a
+              href="mailto:someone@example.com?subject=Contact from our Website"
+              class="contact-us-btn"
+              target="_blank"
+              >CONTACT US</a
+            >
           </ul>
           <ul class="lan-selector">
             <img src="/src/header/language-selector.svg" alt="" />
-            <li class="language primary" data-lan="en">EN</li>
+            <li class="language" data-lan="en">EN</li>
             <li class="language" data-lan="zh">ZH</li>
+          </ul>
+        </div>
+        <img src="/src/header/language-selector.svg" class="mobile" alt="" />
+        <div class="mobile" id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="service.html"><li>SERVICES</li></a>
+            <a href="patented-products.html"><li>PATENTED PRODUCTS</li></a>
+            <a href="#" class="mob-drop" onclick="mobNavDropActive()">
+              <li class="mob-menu-li-icon">
+                <p>BRAND AGENCY & SALES</p>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                    fill="#376A20"
+                  />
+                </svg>
+              </li>
+              <div class="mob-drop-item" style="display: none">
+                <li>
+                  <a href="brand-agency-sales.html#agency">BRAND AGENCY</a>
+                </li>
+                <li>
+                  <a href="brand-agency-sales.html#sales">BRAND SALES</a>
+                </li>
+              </div>
+            </a>
+            <a href="our-client.html"><li>OUR CLIENTS</li></a>
+            <a
+              href="mailto:someone@example.com?subject=Contact from our Website"
+              target="_blank"
+              ><li>CONTACT US</li></a
+            >
           </ul>
         </div>
       </nav>

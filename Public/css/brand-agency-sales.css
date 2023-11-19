@@ -23,6 +23,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 40px;
+  row-gap: 40px;
   align-items: center;
 }
 
@@ -87,4 +88,17 @@ h2 {
 
 .white-logo {
   background: var(--color-tertiary);
+}
+
+@media only screen and (max-width: 1024px) {
+  .agency {
+    grid-template-columns: 1fr;
+    margin-bottom: 60px;
+  }
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .big-logo {
+    order: 4;
+  }
 }

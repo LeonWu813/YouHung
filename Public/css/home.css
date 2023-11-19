@@ -1,7 +1,9 @@
-.fake-img {
+.banner-img {
   height: 620px;
   width: 620px;
-  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-section {
@@ -17,6 +19,7 @@
 }
 .hero-section > div > h1 {
   margin-bottom: 32px;
+  line-height: 120%;
 }
 .hero-section > div > svg {
   position: absolute;
@@ -29,67 +32,9 @@
   left: -50px;
 }
 
-.slider {
-  background-color: var(--color-secondary-container);
-  padding-top: 30px;
-  padding-bottom: 30px;
-  height: 100px;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: 99vw;
-  height: 160px;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(-3000px);
-  }
-}
-
-.slider::before,
-.slider::after {
-  content: "";
-  height: 100px;
-  position: absolute;
-  width: fit-content;
-  z-index: 2;
-}
-.slider::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
-}
-.slider::before {
-  left: 0;
-  top: 0;
-}
-.slider .slide-track {
-  width: 6000px;
-  display: flex;
-  animation: scroll 25s linear infinite;
-  justify-content: space-between;
-}
-.slider .slide {
-  padding: 20px 60px;
-  background-color: #fff;
-  margin-right: 40px;
-  border-radius: 10px;
-  border: 1px solid #1a1c18;
-  display: flex;
-  justify-content: center;
-}
-
-.green-slide {
-  background: var(--color-primary) !important;
-}
-
 .about-section {
-  padding-top: 180px;
-  padding-bottom: 180px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .about-section > div:first-child {
@@ -100,68 +45,82 @@
   margin-bottom: 100px;
 }
 
-.about-section img {
-  margin-bottom: 100px;
+.about-section > div > img {
+  margin-bottom: 120px;
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
+.logos {
+  overflow: hidden;
+  padding: 30px 0 18px 0;
+  border: 1px solid #1a1c18;
+  background: #d8e7cb;
+  white-space: nowrap;
+  position: relative;
+}
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+  height: fit-content;
+}
+
+.logos-slide img {
+  height: 100px;
+  width: fit-content;
+  margin: 0 20px;
+}
+.img-blocks {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr 1.9fr;
+}
+.img-blocks > div {
+  width: 100%;
+  border-radius: 20px;
+  background: var(--color-secondary-container);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-blocks > div.plugs {
+  background: none;
+}
+.img-blocks img {
+  width: 100%;
+}
 .product-section {
   background-color: var(--color-tertiary);
-  padding: 100px;
+  padding: 60px;
+  margin-top: 40px;
   margin-bottom: 60px;
   border-radius: 40px;
 }
-
+.brand-section {
+  padding-top: 120px;
+  padding-bottom: 240px;
+}
 .two-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;
 }
 .two-card > div {
-  background-color: #fff;
+  background: #fff;
   border-radius: 20px;
 }
-
-.patented-section ul {
+.two-card > div ul {
   padding: 40px;
-}
-
-.brand-section {
-  padding-top: 180px;
-  padding-bottom: 180px;
-}
-
-.brand-card {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-}
-
-.brand-card > div {
-  padding: 80px 0 20px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-}
-
-.brand-card p {
-  font-size: 32px;
-  font-family: "Noto Serif TC";
-  font-weight: 700;
-  color: var(--color-secondary);
-}
-
-.more-btn {
-  padding: 8px 16px;
-  background-color: var(--color-primary);
-  width: fit-content;
-  border-radius: 4px;
-  font-size: 16px;
-  color: #fff;
-  font-family: "Noto Sans TC";
-  font-weight: 500;
-  letter-spacing: 0.32px;
-  text-decoration: none;
 }
 
 .form-section {
@@ -185,8 +144,8 @@ form p label {
 }
 
 @media only screen and (max-width: 1024px) {
-  .fake-img {
-    height: 229px;
+  .banner-img {
+    height: unset;
   }
   .hero-section {
     flex-direction: column;
@@ -216,9 +175,32 @@ form p label {
   .about-section p {
     margin-bottom: 20px;
   }
+  .about-section > div > img {
+    margin-bottom: 20px;
+  }
+  .img-blocks img {
+    height: 100%;
+    width: unset;
+  }
+  .img-blocks {
+    grid-template-columns: 1fr 1fr;
+  }
+  .img-blocks > div {
+    height: 145px;
+  }
+  .plugs {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    width: 100% !important;
+    height: auto !important;
+  }
+  .plugs img {
+    width: 100%;
+  }
   .product-section {
     padding: 40px;
     margin-bottom: 20px;
+    margin-top: 0;
   }
   .product-section h2 {
     margin-bottom: 40px;
@@ -241,5 +223,11 @@ form p label {
     padding: 20px;
     display: block;
     text-align: center;
+  }
+  .logos {
+    padding: 20px 0 8px 0;
+  }
+  .logos-slide img {
+    margin: 0 10px;
   }
 }

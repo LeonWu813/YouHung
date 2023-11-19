@@ -122,3 +122,36 @@ function scrollFunction() {
     document.querySelector(".nav_container").style.backgroundColor = "unset";
   }
 }
+
+// Slider
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".pagination",
+  },
+
+  navigation: {
+    nextEl: ".button-next",
+    prevEl: ".button-prev",
+  },
+  autoplay: {
+    delay: 3000,
+  },
+  effect: "fade",
+});
+
+const popUpSection = document.querySelector(".pop-up-section");
+const body = document.querySelector("body");
+
+const popUp = function () {
+  popUpSection.style.display = "flex";
+  body.style.overflow = "hidden";
+};
+const closePop = function () {
+  popUpSection.style.display = "none";
+  body.style.overflow = "auto";
+};
