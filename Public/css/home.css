@@ -21,6 +21,9 @@
   margin-bottom: 32px;
   line-height: 120%;
 }
+.hero-section p {
+  max-width: 480px;
+}
 .hero-section > div > svg {
   position: absolute;
 }
@@ -157,6 +160,9 @@ form p label {
   .hero-section > div > .s-svg {
     top: -50px;
     width: 30px;
+  }
+  .hero-section p {
+    max-width: unset;
   }
   .hero-section > div > .l-svg {
     bottom: -20px;

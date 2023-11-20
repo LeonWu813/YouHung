@@ -1,3 +1,8 @@
+.inner-section {
+  padding: 0;
+  width: fit-content;
+  margin: auto;
+}
 .hero-section {
   background: url(/src/our-client/hero-background.png);
   height: 460px;
@@ -23,15 +28,15 @@ h2 {
 
 .client-logos {
   background-color: #fff;
-  border-radius: 20px;
-  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .client-logos img {
-  width: unset;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
 }
 
 .big-logo {

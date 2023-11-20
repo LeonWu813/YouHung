@@ -310,6 +310,16 @@ footer {
   padding: 28px 0;
 }
 
+@media only screen and (max-width: 1625px) {
+  .nav-lan {
+    column-gap: 50px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .nav__links {
+    column-gap: 20px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .desktop {
     display: none;

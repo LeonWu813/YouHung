@@ -144,7 +144,7 @@ h2 {
 .nav-carousel {
   position: absolute;
   bottom: 40px;
-  left: 60%;
+  right: 40px;
   display: flex;
   align-items: center;
   gap: 16px;
