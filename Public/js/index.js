@@ -145,13 +145,23 @@ const swiper = new Swiper(".swiper", {
 });
 
 const popUpSection = document.querySelector(".pop-up-section");
+const popUpDialog = document.querySelector(".pop-dialog-patents");
 const body = document.querySelector("body");
+const patentsNo = [4, 2, 4, 1, 2];
 
-const popUp = function () {
+const popUp = function (i) {
+  while (popUpDialog.firstChild) {
+    popUpDialog.removeChild(popUpDialog.firstChild);
+  }
   popUpSection.style.display = "flex";
-  body.style.overflow = "hidden";
+  // body.style.overflow = "hidden";
+  for (var j = 0; j < patentsNo[i]; j++)
+    popUpDialog.insertAdjacentHTML(
+      "beforeend",
+      `<img src="/src/patented-products/patent-${i + 1}-${j + 1}.jpg" alt="" />`
+    );
 };
 const closePop = function () {
   popUpSection.style.display = "none";
-  body.style.overflow = "auto";
+  // body.style.overflow = "auto";
 };

@@ -29,7 +29,7 @@ h2 {
 
 .agency p {
   font-size: 32px;
-  font-family: "Noto Serif TC";
+  font-family: "Noto Sans TC";
   font-weight: 700;
   color: var(--color-tertiary);
   margin-bottom: 10px;
@@ -57,7 +57,9 @@ h2 {
 .agency-name {
   padding-left: 60px;
 }
-
+div.cards.inner-section {
+  padding-bottom: 200px;
+}
 .clients-grid {
   display: grid;
   gap: 40px;
@@ -70,6 +72,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 20px;
 }
 
 .client-logos img {
