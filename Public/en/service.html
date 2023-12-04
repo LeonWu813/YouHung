@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;0,900;1,700&family=Poppins:wght@800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Public/css/global.css" />
+    <link rel="stylesheet" href="/Public/css/service.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav_container sticky">
+        <a href="index.html" class="logo">
+          <img src="/src/header/logo.png" alt="" />
+        </a>
+        <div class="nav-lan desktop">
+          <ul class="nav__links">
+            <li class="nav__item" data-nav="1">
+              <a class="nav__link" href="service.html">SERVICES</a>
+              <div class="nav-drop-container">
+                <ul class="nav-drop-div"></ul>
+              </div>
+            </li>
+            <li class="nav__item" data-nav="2">
+              <a class="nav__link" href="patented-products.html"
+                >PATENTED PRODUCTS</a
+              >
+              <div class="nav-drop-container">
+                <ul class="nav-drop-div"></ul>
+              </div>
+            </li>
+            <li class="nav__item" data-nav="3">
+              <a class="nav__link" href="#">BRAND AGENCY & SALES</a>
+              <div class="nav-drop-container">
+                <ul class="nav-drop-div"></ul>
+              </div>
+            </li>
+            <li class="nav__item" data-nav="4">
+              <a class="nav__link" href="our-client.html">OUR CLIENTS</a>
+              <div class="nav-drop-container">
+                <ul class="nav-drop-div"></ul>
+              </div>
+            </li>
+            <a
+              href="mailto:someone@example.com?subject=Contact from our Website"
+              class="contact-us-btn"
+              target="_blank"
+              >CONTACT US</a
+            >
+          </ul>
+          <ul class="lan-selector">
+            <img src="/src/header/language-selector.svg" alt="" />
+            <li class="language" data-lan="en">EN</li>
+            <li class="language" data-lan="zh">ZH</li>
+          </ul>
+        </div>
+        <img src="/src/header/language-selector.svg" class="mobile" alt="" />
+        <div class="mobile" id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="service.html"><li>SERVICES</li></a>
+            <a href="patented-products.html"><li>PATENTED PRODUCTS</li></a>
+            <a href="#" class="mob-drop" onclick="mobNavDropActive()">
+              <li class="mob-menu-li-icon">
+                <p>BRAND AGENCY & SALES</p>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                    fill="#376A20"
+                  />
+                </svg>
+              </li>
+              <div class="mob-drop-item" style="display: none">
+                <li>
+                  <a href="brand-agency-sales.html#agency">BRAND AGENCY</a>
+                </li>
+                <li>
+                  <a href="brand-agency-sales.html#sales">BRAND SALES</a>
+                </li>
+              </div>
+            </a>
+            <a href="our-client.html"><li>OUR CLIENTS</li></a>
+            <a
+              href="mailto:someone@example.com?subject=Contact from our Website"
+              target="_blank"
+              ><li>CONTACT US</li></a
+            >
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="hero-section"></div>
+    <div class="inner-section">
+      <h2>Service</h2>
+      <div class="service">
+        <div class="service-card green-card">
+          <p>Data Center</p>
+          <ul>
+            <li>Green data center</li>
+            <li>Uninterruptible Power Supply (UPS) system</li>
+            <li>Cable management system</li>
+            <li>Environmental control units (ECUs)system installation</li>
+          </ul>
+        </div>
+        <div class="service-card white-card">
+          <p>Structured Cablin</p>
+          <ul>
+            <li>Shielded Systems (Cat.5e/Cat 6/Cat 6A/Cat 8)</li>
+            <li>Unshielded Systems (Cat.5e/Cat 6/Cat 6A/Cat 8)</li>
+            <li>Wire Basket Tray /Cable Tray/Cable Management Rack</li>
+            <li>Cable Labels (Rotatable label stickers)</li>
+            <li>Cable Certification Analyzer Testing</li>
+          </ul>
+        </div>
+        <div class="service-card img-card"></div>
+        <div class="service-card white-card">
+          <p>Internet Services</p>
+          <ul>
+            <li>Wired/Wireless Network</li>
+            <li>SIP Solution</li>
+            <li>IP Broadcasting System</li>
+            <li>IP Intercom System</li>
+            <li>PoE solution</li>
+          </ul>
+        </div>
+        <div class="service-card white-card">
+          <p>Access Control Security & Surveillance</p>
+          <ul>
+            <li>Smart Access Control and Attendance</li>
+            <li>Access Control Management</li>
+            <li>IP Surveillance System</li>
+          </ul>
+        </div>
+        <div class="service-card green-card">
+          <p>System Integration</p>
+          <ul>
+            <li>Cross-System Integration</li>
+            <li>Software and Hardware Development</li>
+          </ul>
+        </div>
+        <div class="service-card white-card">
+          <p>OEM/ODM Services</p>
+        </div>
+        <div class="contact-card white-card">
+          <p>
+            If you have the above service needs, please feel free to contact us
+            for consultation!
+          </p>
+          <div>
+            <a
+              href="mailto:someone@example.com?subject=Contact from our Website"
+              class="contact-us-btn"
+              target="_blank"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="white">Copyright © 2023 youhung. All rights reserved.</p>
+    </footer>
+  </body>
+  <script src="/Public/js/index.js"></script>
+  <script></script>
+</html>

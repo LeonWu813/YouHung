@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brand Agency & Sales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;0,900;1,700&family=Poppins:wght@800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Public/css/global.css" />
+    <link rel="stylesheet" href="/Public/css/brand-agency-sales.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav_container sticky">
+        <a href="index.html" class="logo">
+          <img src="/src/header/logo.png" alt="" />
+        </a>
+        <div class="nav-lan desktop">
+          <ul class="nav__links">
+            <li class="nav__item" data-nav="1">
+              <a class="nav__link" href="service.html">SERVICES</a>
+              <div class="nav-drop-container">
+                <ul class="nav-drop-div"></ul>
+              </div>
+            </li>
+            <li class="nav__item" data-nav="2">
+              <a class="nav__link" href="patented-products.html"
+                >PATENTED PRODUCTS</a
+              >
+              <div class="nav-drop-container">
+                <ul class="nav-drop-div"></ul>
+              </div>
+            </li>
+            <li class="nav__item" data-nav="3">
+              <a class="nav__link" href="#">BRAND AGENCY & SALES</a>
+              <div class="nav-drop-container">
+                <ul class="nav-drop-div"></ul>
+              </div>
+            </li>
+            <li class="nav__item" data-nav="4">
+              <a class="nav__link" href="our-client.html">OUR CLIENTS</a>
+              <div class="nav-drop-container">
+                <ul class="nav-drop-div"></ul>
+              </div>
+            </li>
+            <a
+              href="mailto:someone@example.com?subject=Contact from our Website"
+              class="contact-us-btn"
+              target="_blank"
+              >CONTACT US</a
+            >
+          </ul>
+          <ul class="lan-selector">
+            <img src="/src/header/language-selector.svg" alt="" />
+            <li class="language" data-lan="en">EN</li>
+            <li class="language" data-lan="zh">ZH</li>
+          </ul>
+        </div>
+        <img src="/src/header/language-selector.svg" class="mobile" alt="" />
+        <div class="mobile" id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="service.html"><li>SERVICES</li></a>
+            <a href="patented-products.html"><li>PATENTED PRODUCTS</li></a>
+            <a href="#" class="mob-drop" onclick="mobNavDropActive()">
+              <li class="mob-menu-li-icon">
+                <p>BRAND AGENCY & SALES</p>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                    fill="#376A20"
+                  />
+                </svg>
+              </li>
+              <div class="mob-drop-item" style="display: none">
+                <li>
+                  <a href="brand-agency-sales.html#agency">BRAND AGENCY</a>
+                </li>
+                <li>
+                  <a href="brand-agency-sales.html#sales">BRAND SALES</a>
+                </li>
+              </div>
+            </a>
+            <a href="our-client.html"><li>OUR CLIENTS</li></a>
+            <a
+              href="mailto:someone@example.com?subject=Contact from our Website"
+              target="_blank"
+              ><li>CONTACT US</li></a
+            >
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="hero-section"></div>
+    <div id="agency" class="inner-section">
+      <h2>Brand Agency</h2>
+      <div class="agency">
+        <div class="agency-logo">
+          <img src="/src/brand-agency-sales/R&M.png" alt="" />
+        </div>
+        <div class="agency-name">
+          <p>R&M</p>
+          <ul>
+            <li>全球Cabling的百大品牌，位居前10名</li>
+            <li>瑞士第一大 Cabling 製造商</li>
+            <li>公司重視質量且創新，其產品涵蓋銅纜與光纖</li>
+          </ul>
+          <a
+            href="https://www.rdm.com/"
+            class="white contact-us-btn"
+            target="_blank"
+            >進入官網查看更多資訊</a
+          >
+        </div>
+      </div>
+      <div class="agency">
+        <div class="agency-logo">
+          <img src="/src/brand-agency-sales/trend-network.png" alt="" />
+        </div>
+        <div class="agency-name">
+          <p>TREND Networks</p>
+          <ul>
+            <li>全球網路儀錶製造商之一</li>
+            <li>前身為 IDEAL Networks 其中之一的部門</li>
+            <li>現於英國為一間獨立公司</li>
+          </ul>
+          <a
+            href="https://www.trend-networks.com/"
+            class="white contact-us-btn"
+            target="_blank"
+            >進入官網查看更多資訊</a
+          >
+        </div>
+      </div>
+    </div>
+    <div id="sales" class="inner-section">
+      <h2>Brand Sales</h2>
+    </div>
+    <div class="inner-section cards">
+      <div class="clients-grid">
+        <div class="client-logos">
+          <img src="/src/brand-agency-sales/cisco.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/brand-agency-sales/PROTech.png" alt="" />
+        </div>
+        <div class="client-logos big-logo">
+          <img src="/src/brand-agency-sales/Jrtwell.png" alt="" />
+        </div>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logos big-logo">
+          <img src="/src/brand-agency-sales/iTCheck.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/brand-agency-sales/IDCOM.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/our-client/DXC.png" alt="" />
+        </div>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logos">
+          <img src="/src/brand-agency-sales/A-Lan.png" alt="" />
+        </div>
+        <div class="client-logos big-logo">
+          <img src="/src/brand-agency-sales/HUS.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/brand-agency-sales/QC.png" alt="" />
+        </div>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logos">
+          <img src="/src/brand-agency-sales/SS-Net.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/brand-agency-sales/Zerone.png" alt="" />
+        </div>
+        <div class="client-logos big-logo">
+          <img src="/src/brand-agency-sales/Liberal&Sutable.png" alt="" />
+        </div>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logos big-logo">
+          <img src="/src/brand-agency-sales/Shalarm.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/brand-agency-sales/R&M.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/brand-agency-sales/S-plux.png" alt="" />
+        </div>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logos">
+          <img src="/src/brand-agency-sales/S-cabling.png" alt="" />
+        </div>
+        <div class="client-logos big-logo">
+          <img src="/src/brand-agency-sales/Kabellab.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/brand-agency-sales/Top-World.png" alt="" />
+        </div>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logos">
+          <img src="/src/brand-agency-sales/SS-Net.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/brand-agency-sales/surtec.png" alt="" />
+        </div>
+        <div class="client-logos big-logo">
+          <img src="/src/brand-agency-sales/CTi.png" alt="" />
+        </div>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logos big-logo">
+          <img src="/src/brand-agency-sales/Hikvision.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/brand-agency-sales/SCOO.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/brand-agency-sales/EXW.png" alt="" />
+        </div>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logos">
+          <img src="/src/brand-agency-sales/ibase.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/brand-agency-sales/Runasia.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="white">Copyright © 2023 youhung. All rights reserved.</p>
+    </footer>
+  </body>
+  <script src="/Public/js/index.js"></script>
+  <script></script>
+</html>

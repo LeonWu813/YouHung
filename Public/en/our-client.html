@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Client</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;0,900;1,700&family=Poppins:wght@800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Public/css/global.css" />
+    <link rel="stylesheet" href="/Public/css/our-client.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav_container sticky">
+        <a href="index.html" class="logo">
+          <img src="/src/header/logo.png" alt="" />
+        </a>
+        <div class="nav-lan desktop">
+          <ul class="nav__links">
+            <li class="nav__item" data-nav="1">
+              <a class="nav__link" href="service.html">SERVICES</a>
+              <div class="nav-drop-container">
+                <ul class="nav-drop-div"></ul>
+              </div>
+            </li>
+            <li class="nav__item" data-nav="2">
+              <a class="nav__link" href="patented-products.html"
+                >PATENTED PRODUCTS</a
+              >
+              <div class="nav-drop-container">
+                <ul class="nav-drop-div"></ul>
+              </div>
+            </li>
+            <li class="nav__item" data-nav="3">
+              <a class="nav__link" href="#">BRAND AGENCY & SALES</a>
+              <div class="nav-drop-container">
+                <ul class="nav-drop-div"></ul>
+              </div>
+            </li>
+            <li class="nav__item" data-nav="4">
+              <a class="nav__link" href="our-client.html">OUR CLIENTS</a>
+              <div class="nav-drop-container">
+                <ul class="nav-drop-div"></ul>
+              </div>
+            </li>
+            <a
+              href="mailto:someone@example.com?subject=Contact from our Website"
+              class="contact-us-btn"
+              target="_blank"
+              >CONTACT US</a
+            >
+          </ul>
+          <ul class="lan-selector">
+            <img src="/src/header/language-selector.svg" alt="" />
+            <li class="language" data-lan="en">EN</li>
+            <li class="language" data-lan="zh">ZH</li>
+          </ul>
+        </div>
+        <img src="/src/header/language-selector.svg" class="mobile" alt="" />
+        <div class="mobile" id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="service.html"><li>SERVICES</li></a>
+            <a href="patented-products.html"><li>PATENTED PRODUCTS</li></a>
+            <a href="#" class="mob-drop" onclick="mobNavDropActive()">
+              <li class="mob-menu-li-icon">
+                <p>BRAND AGENCY & SALES</p>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                    fill="#376A20"
+                  />
+                </svg>
+              </li>
+              <div class="mob-drop-item" style="display: none">
+                <li>
+                  <a href="brand-agency-sales.html#agency">BRAND AGENCY</a>
+                </li>
+                <li>
+                  <a href="brand-agency-sales.html#sales">BRAND SALES</a>
+                </li>
+              </div>
+            </a>
+            <a href="our-client.html"><li>OUR CLIENTS</li></a>
+            <a
+              href="mailto:someone@example.com?subject=Contact from our Website"
+              target="_blank"
+              ><li>CONTACT US</li></a
+            >
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="hero-section"></div>
+    <div class="inner-section cards">
+      <div class="text-section">
+        <h2>Our Client</h2>
+        <p>
+          With decades of expertise in the field, Yuhong has earned the trust of
+          over 500 renowned companies from various industries. Feel free to
+          contact us for consultation at any time.
+        </p>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logos">
+          <img src="/src/our-client/nvidia.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/our-client/tsmc.png" alt="" />
+        </div>
+        <div class="client-logos big-logo">
+          <img src="/src/our-client/Omni.png" alt="" />
+        </div>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logos big-logo">
+          <img src="/src/our-client/Capital.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/our-client/Wistron.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/our-client/audio-technica.png" alt="" />
+        </div>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logos">
+          <img src="/src/our-client/DXC.png" alt="" />
+        </div>
+        <div class="client-logos big-logo">
+          <img src="/src/our-client/S-Cabling.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/our-client/zeiss.png" alt="" />
+        </div>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logos">
+          <img src="/src/our-client/BOSCH.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/our-client/EnTie.png" alt="" />
+        </div>
+        <div class="client-logos big-logo">
+          <img src="/src/our-client/trinity.png" alt="" />
+        </div>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logos big-logo">
+          <img src="/src/our-client/TEIA.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/our-client/KIA.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/our-client/A-Lan.png" alt="" />
+        </div>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logos">
+          <img src="/src/our-client/UNIFLEX.png" alt="" />
+        </div>
+        <div class="client-logos big-logo">
+          <img src="/src/our-client/TTL.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/our-client/ALP.png" alt="" />
+        </div>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logos">
+          <img src="/src/our-client/Solution-Founder.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/our-client/Wonderland.png" alt="" />
+        </div>
+        <div class="client-logos big-logo">
+          <img src="/src/our-client/Cathay.png" alt="" />
+        </div>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logos big-logo">
+          <img src="/src/our-client/Formosa-Tech.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/our-client/Rinnai.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/our-client/Formosa.png" alt="" />
+        </div>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logos">
+          <img src="/src/our-client/Advantech.png" alt="" />
+        </div>
+        <div class="client-logos big-logo">
+          <img src="/src/our-client/Taiwan.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/our-client/Goethe-Institut.png" alt="" />
+        </div>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logos">
+          <img src="/src/our-client/Airport.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/our-client/FET.png" alt="" />
+        </div>
+        <div class="client-logos big-logo">
+          <img src="/src/our-client/Joint.png" alt="" />
+        </div>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logos big-logo">
+          <img src="/src/our-client/ASE-Group.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/our-client/Jintex.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/our-client/Quanta.png" alt="" />
+        </div>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logos">
+          <img src="/src/our-client/Taigene.png" alt="" />
+        </div>
+        <div class="client-logos big-logo">
+          <img src="/src/our-client/Ho-Tung.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/our-client/topview.png" alt="" />
+        </div>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logos">
+          <img src="/src/our-client/DKSH.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/our-client/all-lan.png" alt="" />
+        </div>
+        <div class="client-logos big-logo">
+          <img src="/src/our-client/GPM.png" alt="" />
+        </div>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logos big-logo">
+          <img src="/src/our-client/Shu-Te.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/our-client/NOU.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/our-client/NKNU.png" alt="" />
+        </div>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logos">
+          <img src="/src/our-client/Ming-Chuan.png" alt="" />
+        </div>
+        <div class="client-logos big-logo">
+          <img src="/src/our-client/DONHO.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/our-client/Dow-Corning.png" alt="" />
+        </div>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logos">
+          <img src="/src/our-client/Shyang-Yin.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/our-client/Stable-Top.png" alt="" />
+        </div>
+        <div class="client-logos big-logo">
+          <img src="/src/our-client/Systex.png" alt="" />
+        </div>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logos big-logo">
+          <img src="/src/our-client/Yuan-Bang.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/our-client/DH-Crown-Tech.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/our-client/TaipeiStarBank.png" alt="" />
+        </div>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logos">
+          <img src="/src/our-client/Mercedes-Benz.png" alt="" />
+        </div>
+        <div class="client-logos big-logo">
+          <img src="/src/our-client/Chlitina.png" alt="" />
+        </div>
+        <div class="client-logos">
+          <img src="/src/our-client/Kinaz.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="white">Copyright © 2023 youhung. All rights reserved.</p>
+    </footer>
+  </body>
+  <script src="/Public/js/index.js"></script>
+  <script>
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 80 ||
+        document.documentElement.scrollTop > 80
+      ) {
+        document.querySelector(".nav_container").style.backgroundColor =
+          "#fafaf3";
+      } else {
+        document.querySelector(".nav_container").style.backgroundColor =
+          "unset";
+      }
+    }
+  </script>
+</html>

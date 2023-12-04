@@ -74,7 +74,10 @@ h2 {
 .contact-card {
   padding: 40px;
   border-radius: 20px;
+  column-gap: 40px;
+  row-gap: 20px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -82,7 +85,6 @@ h2 {
   font-size: 16px;
   font-family: "Noto Serif TC";
   font-weight: 400;
-  padding-right: 40px;
 }
 
 .contact-container {
