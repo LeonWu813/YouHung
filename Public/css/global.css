@@ -26,6 +26,10 @@ body {
   background-color: #fafaf3;
 }
 
+button {
+  font-family: "Poppins", "Noto Sans TC";
+}
+
 h1 {
   font-size: 60px;
   font-family: "Noto Sans TC";
