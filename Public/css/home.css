@@ -39,11 +39,6 @@
   padding-top: 120px;
   padding-bottom: 120px;
 }
-
-.about-section > div:first-child {
-  padding: 0 100px;
-}
-
 .about-section p {
   margin-bottom: 100px;
 }
