@@ -11,10 +11,10 @@ const mobNavDropItem = document.querySelector(".mob-drop-item");
 
 /////// Change Language
 let currentLanguage;
-if (window.location.href.includes("/zh/")) {
-  currentLanguage = "zh";
-} else {
+if (window.location.href.includes("/en/")) {
   currentLanguage = "en";
+} else {
+  currentLanguage = "zh";
 }
 
 const activeLanguageStyle = function () {
@@ -31,10 +31,18 @@ addEventListener("click", function (e) {
 
   const selectedLan = clicked.dataset.lan;
   if (selectedLan != currentLanguage) {
-    const urlSplit = window.location.href.split("/");
-    urlSplit[4] = selectedLan;
-    window.location.assign(urlSplit.join("/"));
-    currentLanguage = selectedLan;
+    if (currentLanguage === "en") {
+      const urlSplit = window.location.href.split("/");
+      delete urlSplit[3];
+      window.location.assign(urlSplit.join("/"));
+      currentLanguage = selectedLan;
+    } else {
+      const urlSplit = window.location.href.split("/");
+      window.location.assign(
+        [...urlSplit.slice(0, 3), "en", ...urlSplit.slice(4)].join("/")
+      );
+      currentLanguage = selectedLan;
+    }
     activeLanguageStyle();
   }
 });
