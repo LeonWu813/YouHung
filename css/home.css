@@ -121,26 +121,6 @@
   padding: 40px;
 }
 
-.form-section {
-  padding: 200px 320px;
-  border-radius: 60px 60px 0 0;
-  background-color: var(--color-secondary);
-  display: grid;
-  color: #fff;
-  gap: 80px;
-  grid-template-columns: 64fr 56fr;
-}
-
-.form-section p {
-  font-size: 32px;
-  font-family: "Noto Serif TC";
-  font-weight: 700;
-}
-
-form p label {
-  font-size: 15px;
-}
-
 @media only screen and (max-width: 1024px) {
   .banner-img {
     height: unset;

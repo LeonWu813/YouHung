@@ -18,28 +18,28 @@ html {
   box-sizing: border-box;
 }
 
+html[lang="zh"] * {
+  font-family: "Noto Sans TC", Arial !important;
+}
+html[lang="en"] * {
+  font-family: "Poppins", Arial !important;
+}
+
 body {
-  font-family: "Poppins", "Noto Sans TC";
   font-weight: 400;
   color: #1a1c18;
   line-height: 28.96px;
   background-color: #fafaf3;
 }
 
-button {
-  font-family: "Poppins", "Noto Sans TC";
-}
-
 h1 {
-  font-size: 60px;
-  font-family: "Noto Sans TC";
+  font-size: 3.75rem;
   font-weight: 900;
   line-height: 100%;
 }
 
 h2 {
-  font-size: 32px;
-  font-family: "Noto Sans TC";
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 40px;
 }
@@ -53,7 +53,7 @@ h2 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: 0.4px;
 }
 
@@ -108,7 +108,7 @@ ul {
 
 .nav__link:link,
 .nav__link:visited {
-  font-size: 16px;
+  font-size: 1rem;
   color: #1a1c18;
   text-decoration: none;
   display: block;
@@ -133,7 +133,7 @@ ul {
 }
 
 .drop-a {
-  font-size: 16px;
+  font-size: 1rem;
   color: #1a1c18;
   text-decoration: none;
 }
@@ -174,7 +174,7 @@ ul {
   list-style: none;
   display: flex;
   gap: 12px;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .lan-selector > img {
@@ -289,7 +289,7 @@ img.mobile {
 
 #menu li {
   padding: 8px 16px;
-  font-size: 16px;
+  font-size: 1rem;
   margin-top: 20px;
   border-radius: 10px;
 }
@@ -335,17 +335,17 @@ footer {
     padding-right: 32px;
   }
   h1 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
     line-height: normal;
   }
   h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 20px;
   }
   p {
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: 0.32px;
   }
   .nav_container {

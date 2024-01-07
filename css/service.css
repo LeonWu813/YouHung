@@ -3,6 +3,7 @@
   height: 460px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .inner-section {
@@ -45,8 +46,7 @@ h2 {
 }
 
 .service-card p {
-  font-size: 24px;
-  font-family: "Noto Sans TC";
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
@@ -57,6 +57,7 @@ h2 {
   background: url("/src/service/service.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .contact-card {
   padding: 40px;
@@ -69,8 +70,7 @@ h2 {
 }
 
 .contact-card p {
-  font-size: 16px;
-  font-family: "Noto Sans TC";
+  font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.32px;
   color: var(--color-tertiary);

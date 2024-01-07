@@ -33,13 +33,15 @@ addEventListener("click", function (e) {
   if (selectedLan != currentLanguage) {
     if (currentLanguage === "en") {
       const urlSplit = window.location.href.split("/");
-      delete urlSplit[3];
-      window.location.assign(urlSplit.join("/"));
+      window.location.assign(
+        [...urlSplit.slice(0, 3), ...urlSplit.slice(4)].join("/")
+      );
       currentLanguage = selectedLan;
     } else {
       const urlSplit = window.location.href.split("/");
+
       window.location.assign(
-        [...urlSplit.slice(0, 3), "en", ...urlSplit.slice(4)].join("/")
+        [...urlSplit.slice(0, 3), "en", ...urlSplit.slice(3)].join("/")
       );
       currentLanguage = selectedLan;
     }
@@ -116,6 +118,11 @@ function mobNavDropActive() {
   }
 
   mobDropBoolean = !mobDropBoolean;
+}
+
+const mobileMenuControl = document.querySelector("#menuToggle input");
+function closeMobileMenu() {
+  mobileMenuControl.checked = false;
 }
 
 // header scroll
