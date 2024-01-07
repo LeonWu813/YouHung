@@ -8,6 +8,7 @@ const navDropUl = document.querySelectorAll(".nav-drop-div");
 const lanContainer = document.querySelector(".lan-selector");
 const languages = document.querySelectorAll(".language");
 const mobNavDropItem = document.querySelector(".mob-drop-item");
+const mobileLanSelector = document.querySelector(".mobile-lan-selector");
 
 /////// Change Language
 let currentLanguage;
@@ -26,8 +27,16 @@ const activeLanguageStyle = function () {
 activeLanguageStyle();
 
 addEventListener("click", function (e) {
+  const mobClicked = e.target.closest(".mobile-language");
+  if (mobClicked) return;
+
   const clicked = e.target.closest(".language");
-  if (!clicked) return;
+  if (!clicked) {
+    mobileLanSelector
+      .querySelector("ul.nav-drop-div")
+      .classList.remove("nav-drop-active");
+    return;
+  }
 
   const selectedLan = clicked.dataset.lan;
   if (selectedLan != currentLanguage) {
@@ -48,6 +57,12 @@ addEventListener("click", function (e) {
     activeLanguageStyle();
   }
 });
+
+function openLanSelector() {
+  mobileLanSelector
+    .querySelector("ul.nav-drop-div")
+    .classList.toggle("nav-drop-active");
+}
 
 ///////// Nav
 const dropBoolean = [false, false, false, false];

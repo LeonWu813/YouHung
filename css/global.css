@@ -122,11 +122,23 @@ ul {
 /* drop */
 .nav-drop-container {
   position: absolute;
-  align-items: center;
   margin-left: -5px;
 }
-
 .nav-drop-active {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.mobile-lan-selector {
+  position: absolute;
+  right: 43px;
+  top: 62px;
+}
+.mobile-lan-selector ul.nav-drop-div {
+  display: none;
+}
+.mobile-lan-selector ul.nav-drop-div.nav-drop-active {
+  display: block;
   padding: 20px;
   background-color: #fff;
   border-radius: 20px;

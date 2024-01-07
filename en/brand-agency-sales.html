@@ -62,7 +62,23 @@
             <li class="language" data-lan="zh">ZH</li>
           </ul>
         </div>
-        <img src="/src/header/language-selector.svg" class="mobile" alt="" />
+        <img
+          src="/src/header/language-selector.svg"
+          class="mobile mobile-language"
+          alt=""
+          onclick="openLanSelector()"
+        />
+        <div class="mobile-lan-selector">
+          <ul class="nav-drop-div">
+            <li class="drop-li language" data-lan="zh">
+              <p class="drop-a">ZH</p>
+            </li>
+            <li class="seperate-line"></li>
+            <li class="drop-li language" data-lan="en">
+              <p class="drop-a">EN</p>
+            </li>
+          </ul>
+        </div>
         <div class="mobile" id="menuToggle">
           <input type="checkbox" />
           <span></span>
@@ -71,7 +87,7 @@
           <ul id="menu">
             <a href="service.html"><li>SERVICES</li></a>
             <a href="patented-products.html"><li>PATENTED PRODUCTS</li></a>
-            <a href="#" class="mob-drop" onclick="mobNavDropActive()">
+            <a class="mob-drop" onclick="mobNavDropActive()">
               <li class="mob-menu-li-icon">
                 <p>BRAND AGENCY & SALES</p>
                 <svg
