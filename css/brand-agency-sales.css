@@ -51,7 +51,7 @@ h2 {
 }
 .agency-logo img {
   width: unset;
-  max-width: unset;
+  max-width: 100%;
 }
 .agency-name {
   padding-left: 60px;
